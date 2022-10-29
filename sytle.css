@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: o;
+}
+
+.btn{
+    border: 2px solid tomato;
+    background: tomato;
+    color: white;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 12px 20px;
+}
+
+.btn:hover{
+    background: transparent;
+
+}
+
+.btn-white{
+    border: 2px solid white;
+    padding: 10px;
+    color: tomato;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.btn-white:hover{
+    background: tomato;
+    color: white;
+}
+
+/* header section starts section here */
+
+body{
+    height: 1300px;
+    font-family: 'inter', sans-serif
+}
+
+
+header{
+    /* border: 3px solid tomato; */
+    /* height: 100vh; */
+    width: 100%;
+    min-height: 420px;
+    background: url(./header.jpg), linear-gradient(to right, rgba(255, 99, 71, 0.3), rgba(255, 99, 71, 0.6));
+    background-size: cover;
+    background-position: center;
+}
+.nav-mobile{
+    /* border: 3px solid black; */
+    background: tomato;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.mobile-brandname{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.mobile-hamburger{
+    height: 40px;
+    /* border: 3px solid blue; */
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.menu{
+    width: 70%;
+    height: 3px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.4s ease;
+}
+
+.menu::before{
+    content: '';
+    width: 90%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    transform: translateY(-10px);
+}
+
+.menu::after{
+    content: '';
+    width: 90%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    transform: translateY(10px);
+}
+
+.biggie .menu{
+    background: transparent;
+    transform: rotate(180deg);
+}
+
+.biggie .menu::before{
+    transform: rotate(-45deg);
+}
+
+.biggie .menu::after{
+    transform: rotate(45deg);
+}
+.show-inhaler {
+    transform: translateY(0);
+    visibility: visible;
+
+}
+.mobile-links{
+    /* height: 200px; */
+    width: 100%;
+    visibility: hidden;
+    background: tomato;
+    position: fixed;
+    right: 0;
+    transform: translateX(100%);
+    transition: all o.5s ease;
+    z-index: 3;
+}
+
+.mobile-link-container{
+    background: white;
+    color: tomato;
+    list-style: none;
+}
+.mobile-link-container a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    font-weight: bold;
+}
+
+.mobile-link-container a:hover{
+    color: tomato;
+    background: white;
+}
+.desktop-view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 30px;
+}
+
+.desktop-brand-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 30px 20px;
+    
+}
+.desktop-view ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+.desktop-view ul a  {
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-size: 15px ;
+}
+.desktop-view ul a:hover{
+    color: tomato;
+}
+
+
+
+.text-holder{
+    /* border: 3px solid tomato; */
+    /* height: 450px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+}
+.text-holder button{
+    margin-right: 20px;
+
+}
+
+.header-texts{
+    padding: 10px 15px;
+    width: 50%;
+    color: white;
+}
+
+.header-texts p {
+    line-height: 1.5;
+    margin: 20px 0 10px 0;
+}
+
+/* about us section starts here */
+.about-us-div{
+    /* border: 3px solid black; */
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+    /* padding: 35px 25px: */
+    
+}
+
+.about-us{
+    background: tomato;
+    width: 30%;
+    height: 230px;
+    padding-top: 20px;
+    border-radius: 15px;
+    color: white;
+    margin: 25px 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.2;
+}
+
+.about-us h2{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.about-us p{
+    text-align: justify;
+    font-size: 15px;
+}
+.explore-div{
+    background: tomato;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px}
+
+.footer-icons{
+    margin: 8px 0 ;
+}
+.footer-icons a {
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header, 
+section,
+footer,{
+    max-width: 1500px;
+    margin: 0 auto;
+}
