@@ -12,15 +12,14 @@
 <body>
     <!-- header section starts here -->
     
-
     <header>
         <div class="desktop-view">
             <span class="desktop-brand-name"> EXPLORER </span>
             
             <ul>
               <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="aboutus">About</a></li>
+              <li><a href="contact">Contact</a></li>
             </ul> 
        </div>
 
@@ -34,29 +33,33 @@
        <div class="mobile-links">
             <div class="mobile-link-container">
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#" class="mobile-active-link">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
        </div>
 
         <div class="text-holder">
             <div class="header-texts">
-                <h2> EXPLORE THE WORLD</h2>
-                <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed? Quod corporis mollitia libero vitae, eligendi ipsum debitis. Tempore voluptatibus rem dicta. Itaque deleniti eos facilis veniam incidunt, quia modi!</P>
-                <button class="btn"> Learn more <i class="fa-solid fa-arrow-right header-icons"></i></button>
+                <h2>
+                    EXPLORE THE WORLD
+
+                </h2>
+                     <P> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed? Quod corporis mollitia libero vitae, eligendi ipsum debitis. Tempore voluptatibus rem dicta. Itaque deleniti eos facilis veniam incidunt, quia modi
+                     </P>
+                    <button class="btn"> Learn more <i class="fa-solid fa-arrow-right header-icons"></i></button>
             </div>
            
-        </div>
+            
 
-        
-             <script src="./main.js"></script>   
+        </div>  
         
    </header>
 
 <section>
-<div class="about-us-div">
+<div class="about-us-div" id="aboutus">
     
     <div class="about-us">
         <h2> Explore <br>
@@ -104,8 +107,8 @@
 
 
 <footer>
-    <div class="footer-div">
-        <p>&copy; 2022 Explorer, built for Xeraxlabs Internship.</p>
+    <div class="footer-div" id="contact">
+        <p>&copy; 2022 Explorer, built by helenekhay for Xeraxlabs Internship.</p>
     </div>
 
     <div class="footer-icons">
@@ -120,7 +123,7 @@
    
     </div>
 </footer>
-
+<script src="./main.js"></script>
 
 </body>
 </html> 

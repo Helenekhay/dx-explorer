@@ -1,9 +1,11 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    padding: o;
+    padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .btn{
     border: 2px solid tomato;
     background: tomato;
@@ -15,7 +17,6 @@
 
 .btn:hover{
     background: transparent;
-
 }
 
 .btn-white{
@@ -43,7 +44,7 @@ header{
     /* height: 100vh; */
     width: 100%;
     min-height: 420px;
-    background: url(./header.jpg), linear-gradient(to right, rgba(255, 99, 71, 0.3), rgba(255, 99, 71, 0.6));
+    background:linear-gradient(to right, rgba(255, 99, 71, 0.3), rgba(255, 99, 71, 0.6)), url(./header.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -54,12 +55,13 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
+    /* margin-bottom: 20px; */
 }
 
 .mobile-brandname{
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .mobile-hamburger{
@@ -69,23 +71,23 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 6;
 
 }
 
 .menu{
-    width: 70%;
+    width: 80%;
     height: 3px;
     background: white;
     position: relative;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease; */
 }
 
 .menu::before{
     content: '';
-    width: 90%;
+    width: 100%;
     height: 3px;
     background: white;
     position: absolute;
@@ -94,7 +96,7 @@ header{
 
 .menu::after{
     content: '';
-    width: 90%;
+    width: 100%;
     height: 3px;
     background: white;
     position: absolute;
@@ -103,49 +105,51 @@ header{
 
 .biggie .menu{
     background: transparent;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
 }
 
 .biggie .menu::before{
-    transform: rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
 }
 
 .biggie .menu::after{
-    transform: rotate(45deg);
-}
-.show-inhaler {
-    transform: translateY(0);
-    visibility: visible;
+    transform: translateY(0)  rotate(45deg);
 
 }
+
 .mobile-links{
-    /* height: 200px; */
     width: 100%;
-    visibility: hidden;
     background: tomato;
     position: fixed;
     right: 0;
-    transform: translateX(100%);
-    transition: all o.5s ease;
+    
     z-index: 3;
+    transform: translateX(150%);
+    transition: all 0.5s ease;
+    
 }
-
-.mobile-link-container{
-    background: white;
-    color: tomato;
+.show-inhaler{
+    transform: translateX(0);
+    transition: all 0.5s ease;
+}
+.mobile-link-container ul{
     list-style: none;
+    
 }
-.mobile-link-container a {
+.mobile-link-container a{
     display: block;
-    text-decoration: none;
+    padding: 15px 20px;
     color: white;
-    padding: 20px 40px;
-    font-weight: bold;
+    text-decoration: none;
+}
+.mobile-link-container :hover{
+    /* background: white; */
+    color: tomato
 }
 
-.mobile-link-container a:hover{
-    color: tomato;
-    background: white;
+.mobile-active-link{
+    background-color: white;
+    color: tomato !important;
 }
 .desktop-view{
     display: flex;
@@ -177,9 +181,9 @@ header{
     padding: 15px 30px;
     font-size: 15px ;
 }
-.desktop-view ul a:hover{
-    color: tomato;
-}
+/* .desktop-view ul a:hover{ */
+    /* color: tomato; */
+
 
 
 
@@ -224,12 +228,10 @@ header{
     background: tomato;
     width: 30%;
     height: 230px;
-    padding-top: 20px;
+    padding: 20px 30px;
     border-radius: 15px;
     color: white;
     margin: 25px 5px;
-    padding-left: 30px;
-    padding-right: 30px;
     line-height: 1.2;
 }
 
@@ -260,7 +262,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    height: 50px}
+    /* height: 60px; */
+}
 
 .footer-icons{
     margin: 8px 0 ;

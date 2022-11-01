@@ -10,13 +10,18 @@
     .header-texts{
         min-width: 100%;
     }
+    .about-us-div{
+        margin-left: 0;
+        
+    }
     .about-us{
         min-width: 300px;
     }
 
-    .footer-icons{
+    footer{
         flex-direction: column;
         text-align: center;
+        padding: 10px
 
     }
 
