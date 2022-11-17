@@ -120,9 +120,8 @@ header{
 .mobile-links{
     width: 100%;
     background: tomato;
-    position: static;
+    position: absolute;
     right: 0;
-    
     z-index: 3;
     transform: translateX(150%);
     transition: all 0.5s ease;
@@ -193,7 +192,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .text-holder button{
     margin-right: 20px;
